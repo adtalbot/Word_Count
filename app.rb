@@ -10,5 +10,6 @@ end
 
 get('/user_input_one') do
   @word_count = params.fetch('user_input_one').word_count()
+binding.pry
   erb(:word_count)
 end

@@ -1,12 +1,10 @@
 class String
   define_method(:word_count) do
     user_input_one = self
-    user_input_two = ""
-    string_array = []
+    user_input_two = ["cat", "dog", "cat", "cat"]
     counter = 0
 
-    string_array = user_input_two.split(' ')
-    string_array.each() do |word|
+    user_input_two.each() do |word|
       if user_input_one.==(word)
         counter = counter.+(1)
       elsif
@@ -16,3 +14,4 @@ class String
     counter
   end
 end
+#original code
