@@ -1,13 +1,11 @@
 class String
-  define_method(:word_count) do
-    user_input_one = self
-    user_input_two = ""
-    string_array = []
+  define_method(:word_count) do |word_input|
+    user_input_one = self.split(' ')
+    user_input_two = word_input
     counter = 0
 
-    string_array = user_input_two.split(' ')
-    string_array.each() do |word|
-      if user_input_one.==(word)
+    user_input_one.each() do |word|
+      if user_input_two.==(word)
         counter = counter.+(1)
       elsif
         counter
